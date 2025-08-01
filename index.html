@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GNS Cloths</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(120deg, #f0f2f5, #fafafa);
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo img {
+      height: 80px;
+      width: auto;
+      border-radius: 8px;
+    }
+
+    .store-name {
+      font-size: 2rem;
+      font-weight: 600;
+      text-shadow: 1px 1px #000;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product {
+      background-color: #eee;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .product img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .product h3 {
+      margin: 12px 0 6px;
+      font-size: 1.3rem;
+      color: #333;
+    }
+
+    .price-box {
+      margin: 10px 0;
+    }
+
+    .original-price {
+      text-decoration: line-through;
+      color: #888;
+      margin-right: 8px;
+      font-size: 0.95rem;
+    }
+
+    .discounted-price {
+      color: #e67e22;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .buy-btn {
+      background: linear-gradient(90deg, #27ae60, #2ecc71);
+      color: white;
+      padding: 10px 18px;
+      border: none;
+      margin-top: 12px;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .buy-btn:hover {
+      background: linear-gradient(90deg, #1e8449, #27ae60);
+    }
+
+    .badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: crimson;
+      color: white;
+      padding: 5px 10px;
+      font-size: 0.8rem;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #222;
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .store-name {
+        font-size: 1.5rem;
+      }
+
+      .logo img {
+        height: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="https://cdn.discordapp.com/attachments/1274637991716982827/1400766157597704303/G.png?ex=688dd4a4&is=688c8324&hm=288f961eebd2c8ef89c97ffb299a770d886bfc6abde4baab31a1e024848e8733&" alt="GNS Logo">
+    </div>
+    <div class="store-name">GNS Cloths</div>
+  </header>
+
+  <div class="container">
+    <!-- Products 1 to 6 are already included here, unchanged -->
+    <!-- [Paste your original <div class="product">...</div> blocks here] -->
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="badge">20% OFF</div>
+      <img src="https://cdn.discordapp.com/attachments/1274637991716982827/1400759195078234152/yMJNWVp.png?ex=688dce28&is=688c7ca8&hm=1b74d8692de3e46d1ab6806825d3f2f896633e757a3bb5425618cdd6e713d347&" alt="T-Shirt">
+      <h3>Casual T-Shirt</h3>
+      <div class="price-box">
+        <span class="original-price">₹624</span>
+        <span class="discounted-price">₹499</span>
+      </div>
+      <a href="https://www.youtube.com/watch?v=qmqNgz69O4M" class="buy-btn" target="_blank">Buy Now</a>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="badge">20% OFF</div>
+      <img src="https://cdn.discordapp.com/attachments/1274637991716982827/1400757830352502784/compress_0421-cpdnm-azure__1.png?ex=688dcce3&is=688c7b63&hm=b63035f835d78b8d7422d4d674556f44bfec9b5507078a1424020c54dc595bbe&" alt="Jeans">
+      <h3>Denim Jeans</h3>
+      <div class="price-box">
+        <span class="original-price">₹1249</span>
+        <span class="discounted-price">₹999</span>
+      </div>
+      <a href="https://www.youtube.com/watch?v=qmqNgz69O4M" class="buy-btn" target="_blank">Buy Now</a>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <div class="badge">20% OFF</div>
+      <img src="https://cdn.discordapp.com/attachments/1274637991716982827/1400758091506647070/BBGJ-1108-014_2_copy.png?ex=688dcd21&is=688c7ba1&hm=8c8860c140dbcbaa4ec5f5b672191c7a20c1c1d5f39f0885a522fa794dcd1519&" alt="Jacket">
+      <h3>Winter Jacket</h3>
+      <div class="price-box">
+        <span class="original-price">₹1874</span>
+        <span class="discounted-price">₹1499</span>
+      </div>
+      <a href="https://www.youtube.com/watch?v=qmqNgz69O4M" class="buy-btn" target="_blank">Buy Now</a>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="badge">20% OFF</div>
+      <img src="https://cdn.discordapp.com/attachments/1274637991716982827/1400759770645925908/816USpNOtL.png?ex=688dceb2&is=688c7d32&hm=9178625c55d077793d797765f85ebf6109ca2ff553126819b176ba5bdf1d83fd&" alt="Kurta">
+      <h3>Ethnic Kurta</h3>
+      <div class="price-box">
+        <span class="original-price">₹999</span>
+        <span class="discounted-price">₹799</span>
+      </div>
+      <a href="https://www.youtube.com/watch?v=qmqNgz69O4M" class="buy-btn" target="_blank">Buy Now</a>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product">
+      <div class="badge">20% OFF</div>
+      <img src="https://cdn.discordapp.com/attachments/1274637991716982827/1400759608527687794/-473Wx593H-700191363-brown-MODEL.png?ex=688dce8b&is=688c7d0b&hm=4fce5266757d4f088850301801bf35ded9824386a2552028a4448860afe819d0&" alt="Shoes">
+      <h3>Sports Shoes</h3>
+      <div class="price-box">
+        <span class="original-price">₹1624</span>
+        <span class="discounted-price">₹1299</span>
+      </div>
+      <a href="https://www.youtube.com/watch?v=qmqNgz69O4M" class="buy-btn" target="_blank">Buy Now</a>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product">
+      <div class="badge">20% OFF</div>
+      <img src="https://cdn.discordapp.com/attachments/1274637991716982827/1400759428860612628/SignatureOversizedHoodieGrey4.png?ex=688dce60&is=688c7ce0&hm=b3884311fefe03efc0bc1d689615508c5ebc3052cb83c09f839373358e4e97ce&" alt="Hoodie">
+      <h3>Cool Hoodie</h3>
+      <div class="price-box">
+        <span class="original-price">₹1124</span>
+        <span class="discounted-price">₹899</span>
+      </div>
+      <a href="https://www.youtube.com/watch?v=qmqNgz69O4M" class="buy-btn" target="_blank">Buy Now</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 GNS Cloths. All rights reserved.
+  </footer>
+
+</body>
+</html>
